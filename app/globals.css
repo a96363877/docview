@@ -21,3 +21,8 @@
     --radius: 0.5rem;
   }
 }
+.page{
+  height: 11.5cm;
+  width: 9cm;
+box-shadow: 0 0 2px gray;
+}

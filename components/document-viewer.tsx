@@ -59,15 +59,15 @@ export default function DocumentViewer() {
             <PDFViewer />
           </motion.div>
           <motion.div
-            className="mt-4 flex justify-center gap-2 absolute bottom-0 left-0 right-0"
+            className="mt-4 flex justify-center gap-2 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            <Button variant="outline" size="icon">
+            <Button className='rounded-full' variant="ghost" size="icon">
               <ChevronLeft className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="icon">
+            <Button className='rounded-full' variant="ghost" size="icon">
               <ChevronRight className="h-4 w-4" />
             </Button>
           </motion.div>

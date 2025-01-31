@@ -11,11 +11,6 @@ export default function PDFViewer() {
   const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 
-  const { pdfDocument, pdfPage } = usePdf({
-    file: 'test.pdf',
-    page,
-    canvasRef,
-  });
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
@@ -37,7 +32,9 @@ export default function PDFViewer() {
   return (
     <div className="flex flex-col items-center space-y-4">
       <div className="border rounded-lg  w-full">
-        <canvas id="canvas" className="canvas__container"></canvas>
+    <div className='page bg-white '>
+      <h2 className='text-black p-2'>Hello World</h2>
+    </div>
       </div>
     </div>
   );
